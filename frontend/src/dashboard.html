@@ -11,7 +11,7 @@
     <div class="dashboard-container">
         <nav class="sidebar">
             <div class="header-sidebar">
-                <img src="../assets/img/logo.png" alt="Logo Senai">
+                <img src="../assets/img/image.png" alt="Logo Senai">
                 <h2>Gestão de Frotas</h2>
                 <p>SENAI-SC</p>
             </div>
@@ -60,6 +60,85 @@
                 </button>
             </div>
         </nav>
+        <!-- Main content (conteudo principal) -->
+         <main class="main-content">
+            <!-- Sessão da Dashboard -->
+             <section id="dashboard-section" class="content-section active">
+                <div class="section-header">
+                    <h1>Dashboard</h1>
+                    <p>Visão geral do sistema de frotas</p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <!-- Card que mostra as viagens agendadas -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalViagens">0</h3>
+                            <p>Viagens Agendadas</p>
+                        </div>
+                    </div>
+
+                    <!-- Card que mostra os veiculos disponiveis -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalVeiculos">0</h3>
+                            <p>Veículos disponiveis</p>
+                        </div>
+                    </div>
+                     
+                    <!-- Card que mostra os funcionarios cadastrados -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalUsuarios">0</h3>
+                            <p>Funcionários cadastrados</p>
+                        </div>
+                    </div>
+
+                    <!-- Card que mostra a quantidade de viagens feitas hoje-->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="viagensHoje">0</h3>
+                            <p>Viagens Hoje</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proximas viagems -->
+                 <div class="dashboard-content">
+                    <div class="recent-trips">
+                        <h2>Próximas Viagens</h2>
+                        <div id="proximasViagens" class="trips-list">
+                        </div>
+                 </div>
+            </section>
+
+
+            <!-- Viagens Section (sessão de viagens) -->
+            <section id="viagens-section" class="content-section">
+                <div class="section-header">
+                    <h1>Gestão de Viagens</h1>
+                    <button class="btn-primary" onclick="abrirModalViagem()">
+                        <i class="fas fa-plus"></i>
+                        Nova Viagem
+                    </button>
+                </div>
+                
+        
+        
+            </section>
+        </main>
     </div>
 </body>
 </html>
